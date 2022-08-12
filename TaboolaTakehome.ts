@@ -30,15 +30,4 @@ async function extractWordFrequency(text) {
   return frequency;
 }
 
-function findMostFrequentWords(text) {
-  console.log(
-    sortByWordFrequency(Array(extractWordFrequency(text))).slice(0, 24)
-  );
-  return sortByWordFrequency(Array(extractWordFrequency(text))).slice(0, 24);
-}
-
-function sortByWordFrequency(frequencyArray) {
-  return frequencyArray.sort((a, b) => b[1] - a[1]);
-}
-
-findMostFrequentWords(document.body.innerText);
+extractWordFrequency(document.body.innerText);
