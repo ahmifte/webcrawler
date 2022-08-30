@@ -1,4 +1,4 @@
-// Taboola Takehome assignmeny
+// Takehome assignment
 // By Ahmed Iftekhar
 
 const isNumeric = (val) => {
